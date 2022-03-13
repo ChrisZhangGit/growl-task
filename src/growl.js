@@ -29,9 +29,6 @@ export function useGrowl() {
     // the second arg is a fn that allows you to safely set its state
     (active) => {
       setGrowlActive(active);
-      setTimeout(() => {
-        setGrowlActive(false);
-      }, 3000);
     },
   ];
 }
